@@ -23,6 +23,11 @@
             Login
           </router-link>
         </li>
+        <li class="nav-item" v-if="!isLoggedIn">
+          <router-link to="/fireLogin" class="nav-link" active-class="active">
+            Firebase Login
+          </router-link>
+        </li>
         <li class="nav-item" v-if="isLoggedIn">
           <button @click="handleLogout" class="nav-link logout-btn">
             Logout ({{ currentUser }})
