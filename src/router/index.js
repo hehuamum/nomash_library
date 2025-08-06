@@ -6,6 +6,8 @@ import AccessDeniedView from '../views/AccessDeniedView.vue'
 import MembersView from '../views/MembersView.vue'
 import FirebaseSigninView from '@/views/FirebaseSigninView.vue'
 import FirebaseRegisterView from '@/views/FirebaseRegisterView.vue'
+import WeatherView from '../views/WeatherView.vue'
+import CountBookAPI from '../views/CountBookAPI.vue'
 
 const routes = [
   {
@@ -43,6 +45,16 @@ const routes = [
     path: '/fireRegister',
     name: 'FireRegister',
     component: FirebaseRegisterView
+  },
+  {
+    path: '/WeatherCheck',
+    name: 'WeatherCheck',
+    component: WeatherView
+  },
+  {
+    path: '/CountBookAPI',
+    name: 'CountBookAPI',
+    component: CountBookAPI
   }
 ]
 
