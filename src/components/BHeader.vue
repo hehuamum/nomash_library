@@ -13,6 +13,11 @@
             About
           </router-link>
         </li>
+        <li class="nav-item">
+          <router-link to="/addbook" class="nav-link" active-class="active">
+            Add Book
+          </router-link>
+        </li>
         <li class="nav-item" v-if="isLoggedIn">
           <router-link to="/members" class="nav-link" active-class="active">
             Members
