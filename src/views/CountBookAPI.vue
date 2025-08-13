@@ -57,7 +57,7 @@ const getApiData = async () => {
   error.value = null
   
   try {
-    const response = await fetch('src/assets/json/authors.json')
+    const response = await fetch(new URL('../assets/json/authors.json', import.meta.url))
     
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`)
